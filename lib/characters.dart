@@ -16,7 +16,7 @@ class Warrior extends Character {
   }
   @override
   String toString() {
-    return "⚔ Воин $name (брони: $armor)";
+    return "⚔️ Воин $name (брони: $armor)";
   }
 }
 class Mage extends Character {
@@ -38,7 +38,7 @@ class Mage extends Character {
   }
   @override
   String toString() {
-    return "� маг $name (мана: $mana/$maxMana)";
+    return "🔮 маг $name (мана: $mana/$maxMana)";
   }
 }
 class Archer extends Character {
@@ -51,13 +51,13 @@ class Archer extends Character {
     bool isCrit = Random().nextDouble() < critChance;
     int base = 10 + Random().nextInt(11);
     if (isCrit) {
-      print("� Критический удар!");
+      print("💥 Критический удар!");
       return (base * 2.5).round();
     }
     return base;
   }
   @override
   String toString() {
-    return "� Лучник $name (шанс крита: ${(critChance*100).round()}%)";
+    return "🏹 Лучник $name (шанс крита: ${(critChance*100).round()}%)";
   }
 }

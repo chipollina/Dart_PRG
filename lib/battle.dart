@@ -9,7 +9,7 @@ void fight(Character attacker, Character defender) {
 void battle(Character player, Character enemy) {
   print("");
   printSeparator();
-  print("⚔ БИТВА НАЧИНАЕТСЯ!");
+  print("⚔️ БИТВА НАЧИНАЕТСЯ!");
   print("$player");
   print(" против");
   print("$enemy");
@@ -28,9 +28,9 @@ void battle(Character player, Character enemy) {
   printSeparator();
   print("");
   if (player.isAlive) {
-    print("� ${player.name} победил!");
+    print("🏆 ${player.name} победил!");
   } else {
-    print("� ${enemy.name} Победил!");
+    print("🏆 ${enemy.name} Победил!");
   }
   printSeparator();
 }
